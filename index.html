@@ -1,0 +1,734 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171713">
+  <meta name="description" content="Descubre El Mesón de la Oreja en San Blas, Madrid. Cocina tradicional, oreja en salsa y sabor de toda la vida.">
+  <meta property="og:title" content="El Mesón de la Oreja | San Blas, Madrid">
+  <meta property="og:description" content="Tradición madrileña, tapas y nuestra famosa oreja en salsa.">
+  <meta property="og:type" content="website">
+  <title>El Mesón de la Oreja | Tradición madrileña en San Blas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #191a16;
+      --ink-soft: #25261f;
+      --cream: #f5f0e6;
+      --paper: #fffdf8;
+      --gold: #d7ad65;
+      --gold-light: #ebd4a8;
+      --muted: #aaa89f;
+      --red: #8c3329;
+      --line: rgba(255,255,255,.14);
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; width: 100%; }
+    button { font: inherit; }
+    .wrap { width: min(1180px, calc(100% - 44px)); margin-inline: auto; }
+
+    .topline {
+      padding: 10px 20px;
+      text-align: center;
+      color: var(--gold-light);
+      background: var(--red);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    header {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      color: var(--paper);
+      background: rgba(25,26,22,.97);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+    .nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 220px;
+    }
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-family: var(--serif);
+      font-size: 25px;
+      border-radius: 50%;
+    }
+    .brand-name {
+      font-family: var(--serif);
+      font-weight: 700;
+      line-height: 1.05;
+      font-size: 17px;
+    }
+    .brand-name small {
+      display: block;
+      margin-top: 5px;
+      color: var(--gold);
+      font: 600 9px var(--sans);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 29px; }
+    .nav-links a {
+      color: #e3e0d8;
+      font-size: 12px;
+      font-weight: 600;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta, .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      background: var(--gold);
+      color: var(--ink);
+      border: 1px solid var(--gold);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: transform .2s, background .2s;
+    }
+    .nav-cta:hover, .button:hover { transform: translateY(-2px); background: var(--gold-light); }
+    .button-outline {
+      background: transparent;
+      border-color: rgba(255,255,255,.45);
+      color: white;
+    }
+    .button-outline:hover { color: var(--ink); }
+    .menu-toggle {
+      display: none;
+      color: var(--paper);
+      background: transparent;
+      border: 1px solid var(--line);
+      padding: 10px 13px;
+      cursor: pointer;
+    }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      color: white;
+      overflow: hidden;
+      background: var(--ink);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(17,18,15,.96) 0%, rgba(17,18,15,.84) 43%, rgba(17,18,15,.22) 100%),
+        url("https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=2000&q=85") center 54%/cover;
+      transform: scale(1.015);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: auto 0 0;
+      height: 110px;
+      background: linear-gradient(transparent, rgba(17,18,15,.55));
+    }
+    .hero-content { padding: 95px 0 110px; max-width: 720px; }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 32px; height: 1px; background: currentColor; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      margin: 25px 0;
+      font: 600 clamp(46px, 6.8vw, 82px)/1.05 var(--serif);
+      letter-spacing: -2px;
+    }
+    h1 em { color: var(--gold); font-weight: 500; }
+    .hero-copy {
+      max-width: 490px;
+      color: #d3d0c7;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .hero-note {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-top: 46px;
+      color: #d5d0c4;
+      font-size: 11px;
+      letter-spacing: .7px;
+    }
+    .hero-note strong { color: var(--gold); font-size: 20px; }
+    .hero-note span { line-height: 1.6; }
+    .hero-note i { height: 32px; width: 1px; background: var(--line); }
+
+    .ticker {
+      background: var(--gold);
+      padding: 17px 0;
+      overflow: hidden;
+    }
+    .ticker-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px 32px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .ticker-dot { color: var(--red); font-size: 18px; }
+
+    section { padding: 100px 0; }
+    .section-head { max-width: 680px; margin-bottom: 45px; }
+    .section-head .eyebrow { color: var(--red); }
+    h2 {
+      margin: 18px 0;
+      font: 600 clamp(34px, 4.5vw, 53px)/1.12 var(--serif);
+      letter-spacing: -1.2px;
+    }
+    .section-copy { color: #68675e; font-size: 14px; line-height: 1.9; }
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .story-image {
+      position: relative;
+      min-height: 490px;
+      background: #ded5c5;
+    }
+    .story-image img { height: 490px; object-fit: cover; }
+    .image-label {
+      position: absolute;
+      right: -20px;
+      bottom: 28px;
+      max-width: 230px;
+      padding: 22px 25px;
+      color: white;
+      background: var(--red);
+      font: 600 20px/1.35 var(--serif);
+    }
+    .story-copy p { color: #68675e; font-size: 14px; line-height: 1.95; }
+    .signature {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-top: 30px;
+      color: var(--red);
+      font: italic 20px var(--serif);
+    }
+    .signature span { width: 42px; height: 1px; background: var(--gold); }
+
+    .specials {
+      color: white;
+      background: var(--ink);
+    }
+    .specials .section-head .eyebrow { color: var(--gold); }
+    .specials .section-copy { color: #b9b7ae; }
+    .special-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .special-card {
+      background: #23241e;
+      border: 1px solid rgba(255,255,255,.08);
+      transition: transform .25s, border-color .25s;
+    }
+    .special-card:hover { transform: translateY(-6px); border-color: rgba(215,173,101,.65); }
+    .special-card img { height: 240px; object-fit: cover; }
+    .special-info { padding: 25px 25px 28px; }
+    .special-info small {
+      color: var(--gold);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .special-info h3 { margin: 11px 0; font: 600 25px var(--serif); }
+    .special-info p { margin: 0; color: #b9b7ae; font-size: 12px; line-height: 1.8; }
+
+    .award-section { padding: 0; background: var(--red); color: white; }
+    .award {
+      display: grid;
+      grid-template-columns: 130px 1fr auto;
+      align-items: center;
+      gap: 34px;
+      padding: 53px 0;
+    }
+    .award-icon {
+      width: 108px;
+      height: 108px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.55);
+      border-radius: 50%;
+      color: var(--gold-light);
+      font-size: 46px;
+    }
+    .award .eyebrow { color: var(--gold-light); }
+    .award h2 { margin: 12px 0 8px; font-size: clamp(28px, 3vw, 40px); }
+    .award p { margin: 0; color: #f0dcd6; font-size: 12px; line-height: 1.8; }
+    .award-year {
+      color: var(--gold-light);
+      font: 600 40px var(--serif);
+    }
+
+    .visit-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 65px; align-items: stretch; }
+    .visit-info { padding: 10px 0; }
+    .detail {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 15px;
+      padding: 22px 0;
+      border-bottom: 1px solid #ded7c9;
+    }
+    .detail-icon {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      color: var(--red);
+      border: 1px solid #d8c9b3;
+      font-size: 18px;
+    }
+    .detail strong { display: block; margin-bottom: 6px; font-size: 12px; }
+    .detail p, .detail a { margin: 0; color: #68675e; font-size: 13px; line-height: 1.8; }
+    .detail a:hover { color: var(--red); }
+    .visit-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .visit-actions .button { background: var(--ink); color: white; border-color: var(--ink); }
+    .visit-actions .button:hover { background: var(--red); border-color: var(--red); }
+    .map-panel {
+      min-height: 440px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 35px;
+      color: white;
+      background:
+        linear-gradient(0deg, rgba(20,21,17,.88), rgba(20,21,17,.04) 75%),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=85") center/cover;
+    }
+    .map-panel .eyebrow { color: var(--gold); }
+    .map-panel h3 { margin: 14px 0 10px; font: 600 34px var(--serif); }
+    .map-panel p { color: #e4e0d7; font-size: 13px; line-height: 1.8; }
+    .map-panel .button { margin-top: 10px; }
+
+    .closing {
+      position: relative;
+      padding: 88px 0;
+      color: white;
+      text-align: center;
+      background:
+        linear-gradient(rgba(25,26,22,.93), rgba(25,26,22,.93)),
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1500&q=80") center/cover;
+    }
+    .closing .eyebrow { justify-content: center; color: var(--gold); }
+    .closing h2 { max-width: 700px; margin: 22px auto 15px; }
+    .closing p { color: #c4c1b8; font-size: 14px; line-height: 1.8; }
+    .closing .button { margin-top: 14px; }
+
+    footer { color: #c5c1b6; background: #12130f; }
+    .footer-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      padding: 38px 0;
+    }
+    .footer-brand { color: white; font: 600 20px var(--serif); }
+    .footer-brand small {
+      display: block;
+      margin-top: 6px;
+      color: var(--gold);
+      font: 600 9px var(--sans);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 20px; font-size: 11px; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+      color: #8e8d84;
+      font-size: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .nav-links { gap: 17px; }
+      .nav-links a { font-size: 11px; }
+      .nav-cta { padding: 12px 14px; }
+      .story-grid { gap: 42px; }
+      .visit-grid { gap: 35px; }
+      .special-card img { height: 190px; }
+    }
+    @media (max-width: 720px) {
+      .wrap { width: min(100% - 32px, 540px); }
+      .topline { font-size: 9px; letter-spacing: 1.3px; }
+      .nav { min-height: 72px; }
+      .brand { min-width: 0; }
+      .brand-mark { width: 41px; height: 41px; }
+      .brand-name { font-size: 15px; }
+      .menu-toggle { display: block; }
+      .nav-cta { display: none; }
+      .nav-links {
+        position: absolute;
+        top: 71px;
+        left: 0;
+        right: 0;
+        display: none;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 22px 18px;
+        background: var(--ink);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav-links.open { display: flex; flex-direction: column; }
+      .nav-links a { padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+      .hero { min-height: 620px; }
+      .hero::before {
+        background:
+          linear-gradient(90deg, rgba(17,18,15,.91), rgba(17,18,15,.55)),
+          linear-gradient(0deg, rgba(17,18,15,.65), transparent),
+          url("https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=80") 60% center/cover;
+      }
+      .hero-content { padding: 80px 0; }
+      h1 { letter-spacing: -1px; }
+      .hero-copy { font-size: 14px; }
+      .hero-note { margin-top: 35px; }
+      section { padding: 72px 0; }
+      .ticker-inner { gap: 12px 15px; font-size: 8px; letter-spacing: 1.1px; }
+      .story-grid, .visit-grid { grid-template-columns: 1fr; gap: 40px; }
+      .story-image, .story-image img { min-height: 340px; height: 340px; }
+      .image-label { right: -5px; bottom: 18px; padding: 16px 18px; font-size: 17px; }
+      .special-grid { grid-template-columns: 1fr; gap: 18px; }
+      .special-card { display: grid; grid-template-columns: 39% 1fr; }
+      .special-card img { height: 100%; min-height: 185px; }
+      .special-info { padding: 20px 17px; }
+      .special-info h3 { font-size: 21px; }
+      .award { grid-template-columns: 70px 1fr; gap: 20px; padding: 35px 0; }
+      .award-icon { width: 68px; height: 68px; font-size: 30px; }
+      .award-year { grid-column: 2; font-size: 30px; }
+      .map-panel { min-height: 360px; padding: 25px; }
+      .footer-main, .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .footer-main { gap: 24px; }
+      .footer-bottom { gap: 9px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topline">Cocina tradicional · San Blas, Madrid</div>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#inicio" aria-label="El Mesón de la Oreja, inicio">
+        <span class="brand-mark">M</span>
+        <span class="brand-name">El Mesón de la Oreja<small>Tradición madrileña</small></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+        <a href="#historia">Nuestra historia</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#reconocimientos">Reconocimientos</a>
+        <a href="#visitanos">Encuéntranos</a>
+      </nav>
+
+      <a class="nav-cta" href="tel:+34913241322">Llámanos ↗</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="eyebrow">Un clásico de San Blas</div>
+          <h1>El sabor de<br>Madrid, <em>de toda la vida.</em></h1>
+          <p class="hero-copy">
+            Hay sabores que no necesitan presentación. Cocina con raíces,
+            ambiente de mesón y una especialidad que se ha ganado su lugar
+            en la mesa: nuestra oreja en salsa.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#especialidades">Descubre nuestras especialidades <span>↗</span></a>
+            <a class="button button-outline" href="https://www.google.com/maps/search/?api=1&query=El+Meson+de+la+Oreja+Calle+Longares+32+Madrid" target="_blank" rel="noopener noreferrer">Cómo llegar ↗</a>
+          </div>
+          <div class="hero-note">
+            <strong>30+</strong>
+            <span>Años de historia<br>y cocina tradicional</span>
+            <i></i>
+            <span>San Blas<br>Madrid</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Nuestra cocina">
+      <div class="wrap ticker-inner">
+        <span>Recetas tradicionales</span><span class="ticker-dot">✳</span>
+        <span>Tapas con carácter</span><span class="ticker-dot">✳</span>
+        <span>Sabor madrileño</span><span class="ticker-dot">✳</span>
+        <span>Hecho para disfrutar</span>
+      </div>
+    </div>
+
+    <section id="historia">
+      <div class="wrap story-grid">
+        <div class="story-image">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85"
+            alt="Ambiente acogedor de restaurante"
+            loading="lazy">
+          <div class="image-label">La tradición se sirve en la mesa.</div>
+        </div>
+        <div class="story-copy">
+          <div class="eyebrow">Nuestra esencia</div>
+          <h2>Un mesón con historia y sabor propio.</h2>
+          <p>
+            En El Mesón de la Oreja creemos en algo sencillo: comer bien,
+            compartir la mesa y disfrutar de la cocina de siempre.
+          </p>
+          <p>
+            En San Blas, nuestro nombre está ligado a uno de los platos
+            más queridos de la gastronomía popular madrileña. Una propuesta
+            sin artificios, pensada para quienes valoran el sabor auténtico
+            y el trato cercano.
+          </p>
+          <p>
+            Ven a disfrutar de nuestras especialidades y descubre por qué
+            la cocina tradicional sigue teniendo mucho que decir.
+          </p>
+          <div class="signature"><span></span> Tradición que se disfruta</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specials" id="especialidades">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">De nuestra cocina</div>
+          <h2>Los sabores que nos representan.</h2>
+          <p class="section-copy">
+            Cocina castiza, tapas para compartir y platos que saben a
+            tradición. Estas son algunas de las propuestas por las que
+            merece la pena sentarse a la mesa.
+          </p>
+        </div>
+
+        <div class="special-grid">
+          <article class="special-card">
+            <img
+              src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85"
+              alt="Plato de cocina tradicional para compartir"
+              loading="lazy">
+            <div class="special-info">
+              <small>La especialidad de la casa</small>
+              <h3>Oreja en salsa</h3>
+              <p>Un clásico madrileño con personalidad y todo el sabor de la cocina tradicional.</p>
+            </div>
+          </article>
+
+          <article class="special-card">
+            <img
+              src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=85"
+              alt="Tortilla y platos para compartir"
+              loading="lazy">
+            <div class="special-info">
+              <small>Un clásico irresistible</small>
+              <h3>Tortillas y tapas</h3>
+              <p>Opciones para disfrutar sin prisas, acompañadas de una buena conversación.</p>
+            </div>
+          </article>
+
+          <article class="special-card">
+            <img
+              src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=85"
+              alt="Comida preparada para compartir en la mesa"
+              loading="lazy">
+            <div class="special-info">
+              <small>Para compartir</small>
+              <h3>Raciones y buen ambiente</h3>
+              <p>El placer de reunirse alrededor de la mesa y disfrutar de los sabores de siempre.</p>
+            </div>
+          </article>
+        </div>
+        <p style="margin:26px 0 0;color:#aaa89f;font-size:11px;line-height:1.8">
+          Fotografías ilustrativas. Para conocer la carta disponible y los precios actuales, contacta directamente con el restaurante.
+        </p>
+      </div>
+    </section>
+
+    <section class="award-section" id="reconocimientos">
+      <div class="wrap award">
+        <div class="award-icon" aria-hidden="true">✦</div>
+        <div>
+          <div class="eyebrow">Un reconocimiento a nuestra cocina</div>
+          <h2>El sabor que deja huella.</h2>
+          <p>
+            El Mesón de la Oreja figura entre los nombres reconocidos en la
+            Ruta de Tapas de San Blas. En 2016 obtuvo el primer premio del
+            jurado profesional, según la información publicada sobre el certamen.
+          </p>
+        </div>
+        <div class="award-year">2016</div>
+      </div>
+    </section>
+
+    <section id="visitanos">
+      <div class="wrap visit-grid">
+        <div class="visit-info">
+          <div class="eyebrow">Ven a conocernos</div>
+          <h2>Tu mesa te espera en San Blas.</h2>
+          <p class="section-copy">
+            Estamos en el barrio, listos para recibirte. Llámanos si necesitas
+            confirmar el horario, consultar la carta o preguntar por disponibilidad.
+          </p>
+
+          <div class="detail">
+            <div class="detail-icon" aria-hidden="true">⌖</div>
+            <div>
+              <strong>Dirección</strong>
+              <p>Calle de Longares, 32<br>San Blas-Canillejas, Madrid</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=El+Meson+de+la+Oreja+Calle+Longares+32+Madrid" target="_blank" rel="noopener noreferrer">Ver en Google Maps ↗</a>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="detail-icon" aria-hidden="true">☎</div>
+            <div>
+              <strong>Teléfono</strong>
+              <a href="tel:+34913241322">913 24 13 22</a>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="detail-icon" aria-hidden="true">◷</div>
+            <div>
+              <strong>Horarios</strong>
+              <p>Consulta por teléfono los horarios actualizados antes de visitarnos.</p>
+            </div>
+          </div>
+
+          <div class="visit-actions">
+            <a class="button" href="tel:+34913241322">Llamar al restaurante ↗</a>
+            <a class="button" href="https://www.google.com/maps/search/?api=1&query=El+Meson+de+la+Oreja+Calle+Longares+32+Madrid" target="_blank" rel="noopener noreferrer">Cómo llegar ↗</a>
+          </div>
+        </div>
+
+        <div class="map-panel">
+          <div class="eyebrow">Estamos aquí</div>
+          <h3>El Mesón de la Oreja</h3>
+          <p>Calle de Longares, 32 · San Blas, Madrid</p>
+          <a class="button" href="https://www.google.com/maps/search/?api=1&query=El+Meson+de+la+Oreja+Calle+Longares+32+Madrid" target="_blank" rel="noopener noreferrer">Abrir ubicación en Maps ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="wrap">
+        <div class="eyebrow">El sabor de siempre</div>
+        <h2>Hay cosas que saben mejor cuando se comparten.</h2>
+        <p>Acércate a San Blas y disfruta de la cocina tradicional.</p>
+        <a class="button" href="tel:+34913241322">Llámanos y ven a visitarnos ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-main">
+      <a class="footer-brand" href="#inicio">
+        El Mesón de la Oreja
+        <small>Tradición madrileña · San Blas</small>
+      </a>
+      <div class="footer-links">
+        <a href="#historia">Nuestra historia</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#reconocimientos">Reconocimientos</a>
+        <a href="#visitanos">Contacto</a>
+        <a href="tel:+34913241322">913 24 13 22</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© <span id="year"></span> El Mesón de la Oreja. Todos los derechos reservados.</span>
+      <span>San Blas · Madrid</span>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Abrir menú");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
