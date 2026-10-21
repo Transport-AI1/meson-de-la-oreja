@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#191a16">
   <meta name="description" content="El Mesón de la Oreja en San Blas, Madrid. Cocina tradicional, tapas, oreja y un trato de toda la vida.">
   <meta property="og:title" content="El Mesón de la Oreja | San Blas, Madrid">
-  <meta property="og:description" content="Tradición madrileña, tapas y cocina de siempre. Descubre nuestro restaurante en San Blas.">
+  <meta property="og:description" content="Tradición madrileña, tapas y cocina de siempre.">
   <meta property="og:type" content="website">
   <title>El Mesón de la Oreja | Tradición madrileña</title>
 
@@ -72,647 +72,222 @@
       align-items: center;
       gap: 20px;
     }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 13px;
-      min-width: 0;
-    }
+    .brand { display: flex; align-items: center; gap: 13px; min-width: 0; }
     .brand-mark {
-      width: 44px;
-      height: 44px;
-      border: 1px solid var(--gold);
-      display: grid;
-      place-items: center;
-      color: var(--red);
-      font-family: var(--serif);
-      font-size: 25px;
-      flex-shrink: 0;
+      width: 44px; height: 44px; border: 1px solid var(--gold);
+      display: grid; place-items: center; color: var(--red);
+      font-family: var(--serif); font-size: 25px; flex-shrink: 0;
     }
-    .brand-name {
-      font-family: var(--serif);
-      font-weight: 700;
-      font-size: 19px;
-      line-height: 1.1;
-    }
+    .brand-name { font-family: var(--serif); font-weight: 700; font-size: 19px; line-height: 1.1; }
     .brand-sub {
-      display: block;
-      margin-top: 5px;
-      color: var(--muted);
-      font-size: 9px;
-      letter-spacing: .19em;
-      text-transform: uppercase;
+      display: block; margin-top: 5px; color: var(--muted);
+      font-size: 9px; letter-spacing: .19em; text-transform: uppercase;
     }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      font-size: 12px;
-      font-weight: 600;
-    }
+    .nav-links { display: flex; align-items: center; gap: 28px; font-size: 12px; font-weight: 600; }
     .nav-links a:hover { color: var(--red); }
     .nav-cta, .button {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      gap: 9px;
-      padding: 14px 19px;
-      border: 1px solid var(--ink);
-      background: var(--ink);
-      color: white;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      transition: .2s ease;
-      cursor: pointer;
+      display: inline-flex; justify-content: center; align-items: center; gap: 9px;
+      padding: 14px 19px; border: 1px solid var(--ink); background: var(--ink);
+      color: white; font-size: 11px; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase; transition: .2s ease; cursor: pointer;
     }
-    .nav-cta:hover, .button:hover {
-      background: var(--red);
-      border-color: var(--red);
-    }
-    .menu-toggle {
-      display: none;
-      border: 0;
-      background: transparent;
-      font-size: 25px;
-      cursor: pointer;
-    }
+    .nav-cta:hover, .button:hover { background: var(--red); border-color: var(--red); }
+    .menu-toggle { display: none; border: 0; background: transparent; font-size: 25px; cursor: pointer; }
 
     .hero {
-      min-height: 660px;
-      display: flex;
-      align-items: center;
-      position: relative;
-      isolation: isolate;
-      overflow: hidden;
-      background: var(--ink);
-      color: white;
+      min-height: 660px; display: flex; align-items: center; position: relative;
+      isolation: isolate; overflow: hidden; background: var(--ink); color: white;
     }
     .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -2;
-      background:
-        url("https://paginadeldistrito.com/wp-content/uploads/2018/03/la-oreja9.jpg")
-        center 52% / cover no-repeat;
-      opacity: .62;
-      transform: scale(1.02);
+      content: ""; position: absolute; inset: 0; z-index: -2;
+      background: url("https://paginadeldistrito.com/wp-content/uploads/2018/03/la-oreja9.jpg") center 52% / cover no-repeat;
+      opacity: .62; transform: scale(1.02);
     }
     .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-      background: linear-gradient(90deg, rgba(15,16,13,.91) 0%, rgba(15,16,13,.68) 53%, rgba(15,16,13,.15) 100%);
+      content: ""; position: absolute; inset: 0; z-index: -1;
+      background: linear-gradient(90deg, rgba(15,16,13,.91), rgba(15,16,13,.68) 53%, rgba(15,16,13,.15));
     }
-    .hero-inner {
-      width: 100%;
-      max-width: 1240px;
-      margin: auto;
-      padding: 95px 30px 110px;
-    }
+    .hero-inner { width: 100%; max-width: 1240px; margin: auto; padding: 95px 30px 110px; }
     .eyebrow {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      color: var(--gold);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .2em;
-      text-transform: uppercase;
+      display: flex; align-items: center; gap: 12px; color: var(--gold);
+      font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase;
     }
-    .eyebrow::before {
-      content: "";
-      width: 35px;
-      height: 1px;
-      background: currentColor;
-    }
+    .eyebrow::before { content: ""; width: 35px; height: 1px; background: currentColor; }
     h1, h2, h3, p { margin-top: 0; }
     .hero h1 {
-      max-width: 760px;
-      margin: 26px 0 24px;
-      font-family: var(--serif);
-      font-size: clamp(48px, 7vw, 86px);
-      font-weight: 500;
-      line-height: 1.04;
-      letter-spacing: -.04em;
+      max-width: 760px; margin: 26px 0 24px; font-family: var(--serif);
+      font-size: clamp(48px, 7vw, 86px); font-weight: 500;
+      line-height: 1.04; letter-spacing: -.04em;
     }
     .hero h1 em { color: var(--gold); font-weight: 400; }
-    .hero-copy {
-      max-width: 490px;
-      color: rgba(255,255,255,.8);
-      font-size: 15px;
-      line-height: 1.9;
-    }
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 32px;
-    }
-    .button-gold {
-      color: var(--ink);
-      border-color: var(--gold);
-      background: var(--gold);
-    }
+    .hero-copy { max-width: 490px; color: rgba(255,255,255,.8); font-size: 15px; line-height: 1.9; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .button-gold { color: var(--ink); border-color: var(--gold); background: var(--gold); }
     .button-gold:hover { background: #edcf98; border-color: #edcf98; color: var(--ink); }
-    .button-outline {
-      color: white;
-      border-color: rgba(255,255,255,.55);
-      background: transparent;
-    }
+    .button-outline { color: white; border-color: rgba(255,255,255,.55); background: transparent; }
     .button-outline:hover { color: var(--ink); background: white; border-color: white; }
-    .hero-note {
-      margin-top: 28px;
-      color: rgba(255,255,255,.66);
-      font-size: 11px;
-      letter-spacing: .04em;
-    }
+    .hero-note { margin-top: 28px; color: rgba(255,255,255,.66); font-size: 11px; letter-spacing: .04em; }
 
     .ticker {
-      overflow: hidden;
-      background: var(--gold);
-      color: var(--ink);
-      padding: 17px 20px;
-      text-align: center;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .13em;
-      text-transform: uppercase;
+      overflow: hidden; background: var(--gold); color: var(--ink);
+      padding: 17px 20px; text-align: center; font-size: 11px;
+      font-weight: 700; letter-spacing: .13em; text-transform: uppercase;
     }
     .ticker span { margin: 0 15px; }
-
-    .section {
-      padding: 105px 30px;
-    }
-    .section-inner {
-      max-width: 1180px;
-      margin: auto;
-    }
-    .section-heading {
-      max-width: 680px;
-      margin-bottom: 48px;
-    }
+    .section { padding: 105px 30px; }
+    .section-inner { max-width: 1180px; margin: auto; }
+    .section-heading { max-width: 680px; margin-bottom: 48px; }
     .section-heading .eyebrow { color: var(--red); }
     .section-heading h2 {
-      margin: 18px 0;
-      font-family: var(--serif);
-      font-size: clamp(36px, 5vw, 56px);
-      font-weight: 500;
-      line-height: 1.12;
-      letter-spacing: -.035em;
+      margin: 18px 0; font-family: var(--serif);
+      font-size: clamp(36px, 5vw, 56px); font-weight: 500; line-height: 1.12; letter-spacing: -.035em;
     }
-    .section-heading p {
-      max-width: 580px;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.9;
+    .section-heading p, .story-copy p, .award-copy p, .visit-copy > p {
+      color: var(--muted); font-size: 14px; line-height: 1.9;
     }
-
-    .story-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 75px;
-      align-items: center;
-    }
-    .story-image {
-      position: relative;
-      min-height: 500px;
-      background: #e7dfd0;
-    }
+    .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 75px; align-items: center; }
+    .story-image { position: relative; min-height: 500px; background: #e7dfd0; }
     .story-image img { height: 500px; }
     .image-caption {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      right: 20px;
-      padding: 16px 18px;
-      background: rgba(25,26,22,.89);
-      color: white;
-      font-family: var(--serif);
-      font-size: 18px;
+      position: absolute; bottom: 20px; left: 20px; right: 20px; padding: 16px 18px;
+      background: rgba(25,26,22,.89); color: white; font-family: var(--serif); font-size: 18px;
     }
     .image-caption small {
-      display: block;
-      margin-top: 5px;
-      color: var(--gold);
-      font-family: var(--sans);
-      font-size: 9px;
-      letter-spacing: .14em;
-      text-transform: uppercase;
+      display: block; margin-top: 5px; color: var(--gold); font-family: var(--sans);
+      font-size: 9px; letter-spacing: .14em; text-transform: uppercase;
     }
     .story-copy h2 {
-      margin: 19px 0;
-      font-family: var(--serif);
-      font-size: clamp(36px, 4.5vw, 54px);
-      font-weight: 500;
-      line-height: 1.12;
-      letter-spacing: -.035em;
+      margin: 19px 0; font-family: var(--serif); font-size: clamp(36px, 4.5vw, 54px);
+      font-weight: 500; line-height: 1.12; letter-spacing: -.035em;
     }
-    .story-copy p {
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.95;
-    }
-    .signature {
-      margin-top: 28px;
-      padding-top: 22px;
-      border-top: 1px solid var(--line);
-      font-family: var(--serif);
-      font-size: 23px;
-      font-style: italic;
-    }
-    .signature small {
-      display: block;
-      margin-top: 8px;
-      color: var(--muted);
-      font-family: var(--sans);
-      font-size: 9px;
-      font-style: normal;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-    }
+    .signature { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--line); font-family: var(--serif); font-size: 23px; font-style: italic; }
+    .signature small { display: block; margin-top: 8px; color: var(--muted); font-family: var(--sans); font-size: 9px; font-style: normal; letter-spacing: .15em; text-transform: uppercase; }
 
     .specialties { background: var(--cream); }
     .specialties .section-heading { text-align: center; margin-left: auto; margin-right: auto; }
     .specialties .section-heading .eyebrow { justify-content: center; }
-    .food-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
+    .food-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
     .food-card { background: var(--paper); }
     .food-image { height: 270px; overflow: hidden; background: #ddd3c3; }
     .food-image img { height: 100%; transition: transform .5s ease; }
     .food-card:hover .food-image img { transform: scale(1.04); }
     .food-info { padding: 25px 24px 29px; }
-    .food-number {
-      color: var(--red);
-      font-size: 10px;
-      letter-spacing: .16em;
-    }
-    .food-info h3 {
-      margin: 12px 0 10px;
-      font-family: var(--serif);
-      font-size: 25px;
-      font-weight: 500;
-    }
-    .food-info p {
-      margin-bottom: 0;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.8;
-    }
-    .food-disclaimer {
-      margin: 24px 0 0;
-      color: var(--muted);
-      text-align: center;
-      font-size: 11px;
-      line-height: 1.8;
-    }
+    .food-number { color: var(--red); font-size: 10px; letter-spacing: .16em; }
+    .food-info h3 { margin: 12px 0 10px; font-family: var(--serif); font-size: 25px; font-weight: 500; }
+    .food-info p { margin-bottom: 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+    .food-disclaimer { margin: 24px 0 0; color: var(--muted); text-align: center; font-size: 11px; line-height: 1.8; }
 
     .award { background: var(--ink); color: white; }
-    .award-grid {
-      display: grid;
-      grid-template-columns: .95fr 1fr;
-      gap: 65px;
-      align-items: center;
-    }
-    .award-photo {
-      position: relative;
-      min-height: 370px;
-      background: #333;
-    }
+    .award-grid { display: grid; grid-template-columns: .95fr 1fr; gap: 65px; align-items: center; }
+    .award-photo { position: relative; min-height: 370px; background: #333; }
     .award-photo img { height: 370px; }
     .award-copy .eyebrow { color: var(--gold); }
-    .award-copy h2 {
-      margin: 22px 0;
-      font-family: var(--serif);
-      font-size: clamp(35px, 4.5vw, 52px);
-      font-weight: 500;
-      line-height: 1.13;
-    }
-    .award-copy p {
-      color: rgba(255,255,255,.7);
-      font-size: 14px;
-      line-height: 1.9;
-    }
+    .award-copy h2 { margin: 22px 0; font-family: var(--serif); font-size: clamp(35px, 4.5vw, 52px); font-weight: 500; line-height: 1.13; }
+    .award-copy p { color: rgba(255,255,255,.7); }
     .award-label {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 12px 15px;
-      border: 1px solid rgba(215,173,101,.6);
-      color: var(--gold);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
+      display: inline-block; margin-top: 12px; padding: 12px 15px;
+      border: 1px solid rgba(215,173,101,.6); color: var(--gold);
+      font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
     }
 
-    .visit-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: start;
-    }
-    .visit-copy h2 {
-      margin: 18px 0;
-      font-family: var(--serif);
-      font-size: clamp(36px, 4.5vw, 53px);
-      font-weight: 500;
-      line-height: 1.12;
-    }
-    .visit-copy > p {
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.9;
-    }
-    .detail-list {
-      margin-top: 30px;
-      border-top: 1px solid var(--line);
-    }
-    .detail {
-      display: grid;
-      grid-template-columns: 95px 1fr;
-      gap: 15px;
-      padding: 19px 0;
-      border-bottom: 1px solid var(--line);
-    }
-    .detail-label {
-      color: var(--red);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-    }
-    .detail-value {
-      font-size: 13px;
-      line-height: 1.8;
-    }
+    .visit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    .visit-copy h2 { margin: 18px 0; font-family: var(--serif); font-size: clamp(36px, 4.5vw, 53px); font-weight: 500; line-height: 1.12; }
+    .detail-list { margin-top: 30px; border-top: 1px solid var(--line); }
+    .detail { display: grid; grid-template-columns: 95px 1fr; gap: 15px; padding: 19px 0; border-bottom: 1px solid var(--line); }
+    .detail-label { color: var(--red); font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .detail-value { font-size: 13px; line-height: 1.8; }
     .detail-value small { display: block; color: var(--muted); }
     .visit-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
     .map-panel {
-      position: relative;
-      min-height: 500px;
-      display: flex;
-      align-items: end;
-      padding: 28px;
-      overflow: hidden;
-      background: var(--ink);
-      color: white;
+      position: relative; min-height: 500px; display: flex; align-items: end;
+      padding: 28px; overflow: hidden; background: var(--ink); color: white;
     }
     .map-panel::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(0deg, rgba(17,18,15,.94), rgba(17,18,15,.12)),
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(0deg, rgba(17,18,15,.94), rgba(17,18,15,.12)),
         url("https://paginadeldistrito.com/wp-content/uploads/2018/03/la-oreja9.jpg") center / cover no-repeat;
       transition: transform .5s ease;
     }
     .map-panel:hover::before { transform: scale(1.03); }
     .map-content { position: relative; z-index: 1; }
     .map-content .eyebrow { color: var(--gold); }
-    .map-content h3 {
-      margin: 14px 0;
-      font-family: var(--serif);
-      font-size: 32px;
-      font-weight: 500;
-    }
+    .map-content h3 { margin: 14px 0; font-family: var(--serif); font-size: 32px; font-weight: 500; }
     .map-content p { color: rgba(255,255,255,.75); font-size: 12px; line-height: 1.8; }
 
-    .closing {
-      padding: 92px 25px;
-      text-align: center;
-      background: var(--cream);
-    }
+    .closing { padding: 92px 25px; text-align: center; background: var(--cream); }
     .closing .eyebrow { justify-content: center; color: var(--red); }
-    .closing h2 {
-      max-width: 760px;
-      margin: 23px auto;
-      font-family: var(--serif);
-      font-size: clamp(36px, 5.5vw, 61px);
-      font-weight: 500;
-      line-height: 1.12;
-    }
-    .closing p {
-      max-width: 510px;
-      margin: 0 auto 25px;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.9;
-    }
-
+    .closing h2 { max-width: 760px; margin: 23px auto; font-family: var(--serif); font-size: clamp(36px, 5.5vw, 61px); font-weight: 500; line-height: 1.12; }
+    .closing p { max-width: 510px; margin: 0 auto 25px; color: var(--muted); font-size: 14px; line-height: 1.9; }
     footer { background: var(--ink); color: white; padding: 36px 30px; }
-    .footer-inner {
-      max-width: 1180px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
+    .footer-inner { max-width: 1180px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
     .footer-brand { font-family: var(--serif); font-size: 19px; }
     .footer-small { margin-top: 7px; color: rgba(255,255,255,.55); font-size: 10px; }
     .footer-links { display: flex; gap: 20px; flex-wrap: wrap; font-size: 11px; }
     .footer-links a:hover { color: var(--gold); }
 
-    /* Botón flotante del agente de voz */
     .voice-launcher {
-      position: fixed;
-      z-index: 80;
-      right: 23px;
-      bottom: 23px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 12px 19px 12px 12px;
-      border: 1px solid rgba(255,255,255,.2);
-      border-radius: 50px;
-      background: var(--ink);
-      color: white;
-      box-shadow: 0 8px 35px rgba(0,0,0,.23);
-      cursor: pointer;
-      transition: transform .2s, background .2s;
+      position: fixed; z-index: 80; right: 23px; bottom: 23px;
+      display: flex; align-items: center; gap: 12px; padding: 12px 19px 12px 12px;
+      border: 1px solid rgba(255,255,255,.2); border-radius: 50px;
+      background: var(--ink); color: white; box-shadow: 0 8px 35px rgba(0,0,0,.23);
+      cursor: pointer; transition: transform .2s, background .2s;
     }
     .voice-launcher:hover { transform: translateY(-3px); background: var(--red); }
-    .voice-launcher-icon {
-      display: grid;
-      place-items: center;
-      width: 43px;
-      height: 43px;
-      border-radius: 50%;
-      background: var(--gold);
-      color: var(--ink);
-      font-size: 21px;
-    }
+    .voice-launcher-icon { display: grid; place-items: center; width: 43px; height: 43px; border-radius: 50%; background: var(--gold); color: var(--ink); font-size: 21px; }
     .voice-launcher-text { text-align: left; }
     .voice-launcher-text strong { display: block; font-size: 12px; }
     .voice-launcher-text small { display: block; margin-top: 4px; color: rgba(255,255,255,.7); font-size: 10px; }
 
     .voice-overlay {
-      position: fixed;
-      inset: 0;
-      z-index: 100;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 18px;
-      background: rgba(12,13,10,.72);
-      backdrop-filter: blur(7px);
+      position: fixed; inset: 0; z-index: 100; display: none;
+      align-items: center; justify-content: center; padding: 18px;
+      background: rgba(12,13,10,.72); backdrop-filter: blur(7px);
     }
     .voice-overlay.open { display: flex; }
     .voice-panel {
-      position: relative;
-      width: 100%;
-      max-width: 430px;
-      max-height: calc(100dvh - 36px);
-      overflow-y: auto;
-      padding: 34px 28px 26px;
-      border: 1px solid rgba(215,173,101,.55);
-      background: var(--paper);
-      color: var(--ink);
-      text-align: center;
-      box-shadow: 0 20px 90px rgba(0,0,0,.3);
+      position: relative; width: 100%; max-width: 430px; max-height: calc(100dvh - 36px);
+      overflow-y: auto; padding: 34px 28px 26px; border: 1px solid rgba(215,173,101,.55);
+      background: var(--paper); color: var(--ink); text-align: center; box-shadow: 0 20px 90px rgba(0,0,0,.3);
     }
     .voice-close {
-      position: absolute;
-      top: 12px;
-      right: 13px;
-      display: grid;
-      place-items: center;
-      width: 37px;
-      height: 37px;
-      border: 1px solid var(--line);
-      border-radius: 50%;
-      background: transparent;
-      font-size: 22px;
-      cursor: pointer;
+      position: absolute; top: 12px; right: 13px; display: grid; place-items: center;
+      width: 37px; height: 37px; border: 1px solid var(--line); border-radius: 50%;
+      background: transparent; font-size: 22px; cursor: pointer;
     }
-    .voice-brand-mark {
-      display: grid;
-      place-items: center;
-      width: 52px;
-      height: 52px;
-      margin: 0 auto 16px;
-      border: 1px solid var(--gold);
-      color: var(--red);
-      font-family: var(--serif);
-      font-size: 29px;
-    }
-    .voice-kicker {
-      color: var(--red);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-    }
-    .voice-panel h2 {
-      margin: 12px 0 9px;
-      font-family: var(--serif);
-      font-size: 31px;
-      font-weight: 500;
-    }
-    .voice-intro {
-      margin: 0 auto;
-      max-width: 315px;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.8;
-    }
+    .voice-brand-mark { display: grid; place-items: center; width: 52px; height: 52px; margin: 0 auto 16px; border: 1px solid var(--gold); color: var(--red); font-family: var(--serif); font-size: 29px; }
+    .voice-kicker { color: var(--red); font-size: 10px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+    .voice-panel h2 { margin: 12px 0 9px; font-family: var(--serif); font-size: 31px; font-weight: 500; }
+    .voice-intro { margin: 0 auto; max-width: 315px; color: var(--muted); font-size: 12px; line-height: 1.8; }
     .voice-orb {
-      display: grid;
-      place-items: center;
-      width: 112px;
-      height: 112px;
-      margin: 25px auto 18px;
-      border: 1px solid rgba(140,51,41,.22);
-      border-radius: 50%;
-      background: #f1e7d7;
-      color: var(--red);
-      font-size: 39px;
-      transition: .2s;
+      display: grid; place-items: center; width: 112px; height: 112px; margin: 25px auto 18px;
+      border: 1px solid rgba(140,51,41,.22); border-radius: 50%; background: #f1e7d7;
+      color: var(--red); font-size: 39px; transition: .2s;
     }
-    .voice-orb.listening {
-      background: var(--red);
-      color: white;
-      animation: pulse 1.5s infinite;
-    }
+    .voice-orb.listening { background: var(--red); color: white; animation: pulse 1.5s infinite; }
     .voice-orb.speaking { background: var(--gold); color: var(--ink); }
     @keyframes pulse {
       0% { box-shadow: 0 0 0 0 rgba(140,51,41,.35); }
       70% { box-shadow: 0 0 0 18px rgba(140,51,41,0); }
       100% { box-shadow: 0 0 0 0 rgba(140,51,41,0); }
     }
-    .voice-status {
-      min-height: 38px;
-      margin-bottom: 14px;
-      font-size: 13px;
-      font-weight: 600;
-      line-height: 1.6;
-    }
-    .voice-answer {
-      min-height: 56px;
-      margin: 0 0 20px;
-      padding: 14px;
-      background: var(--cream);
-      color: #44443c;
-      font-size: 12px;
-      line-height: 1.8;
-      text-align: left;
-    }
+    .voice-status { min-height: 38px; margin-bottom: 14px; font-size: 13px; font-weight: 600; line-height: 1.6; }
+    .voice-answer { min-height: 56px; margin: 0 0 20px; padding: 14px; background: var(--cream); color: #44443c; font-size: 12px; line-height: 1.8; text-align: left; overflow-wrap: anywhere; }
     .voice-main-button {
-      width: 100%;
-      min-height: 50px;
-      border: 0;
-      background: var(--ink);
-      color: white;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      cursor: pointer;
+      width: 100%; min-height: 50px; border: 0; background: var(--ink); color: white;
+      font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; cursor: pointer;
     }
     .voice-main-button:hover { background: var(--red); }
     .voice-main-button:disabled { opacity: .6; cursor: wait; }
-    .voice-stop-button {
-      margin-top: 10px;
-      padding: 9px 14px;
-      border: 0;
-      background: transparent;
-      color: var(--muted);
-      font-size: 11px;
-      cursor: pointer;
-    }
-    .voice-hint {
-      margin: 17px 0 0;
-      color: var(--muted);
-      font-size: 10px;
-      line-height: 1.7;
-    }
-    .voice-privacy {
-      margin-top: 14px;
-      color: #8a897f;
-      font-size: 9px;
-      line-height: 1.6;
-    }
+    .voice-stop-button { margin-top: 10px; padding: 9px 14px; border: 0; background: transparent; color: var(--muted); font-size: 11px; cursor: pointer; }
+    .voice-hint { margin: 17px 0 0; color: var(--muted); font-size: 10px; line-height: 1.7; }
+    .voice-privacy { margin-top: 14px; color: #8a897f; font-size: 9px; line-height: 1.6; }
 
     @media (max-width: 850px) {
       .nav-inner { min-height: 72px; padding: 0 20px; }
       .menu-toggle { display: block; }
       .nav-links {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        display: none;
-        align-items: stretch;
-        padding: 20px;
-        border-bottom: 1px solid var(--line);
-        background: var(--paper);
+        position: absolute; top: 100%; left: 0; right: 0; display: none;
+        align-items: stretch; padding: 20px; border-bottom: 1px solid var(--line); background: var(--paper);
       }
       .nav-links.open { display: flex; flex-direction: column; gap: 21px; }
       .nav-cta { text-align: center; }
@@ -733,7 +308,7 @@
       .hero { min-height: 560px; }
       .hero h1 { font-size: 48px; }
       .hero-copy { font-size: 13px; }
-      .hero-actions { align-items: stretch; flex-direction: column; max-width: 270px; }
+      .hero-actions { align-items: stretch; flex-direction: column; max-width: 300px; }
       .button { min-height: 47px; }
       .ticker { font-size: 9px; line-height: 2; }
       .ticker span { margin: 0 5px; }
@@ -749,7 +324,6 @@
       .voice-orb { width: 94px; height: 94px; font-size: 33px; }
       .footer-inner { align-items: flex-start; flex-direction: column; }
     }
-
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
     }
@@ -768,9 +342,7 @@
           <span class="brand-sub">Tradición madrileña</span>
         </span>
       </a>
-
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-
       <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
         <a href="#historia">Nuestra historia</a>
         <a href="#especialidades">Especialidades</a>
@@ -786,10 +358,7 @@
       <div class="hero-inner">
         <div class="eyebrow">Un clásico de San Blas</div>
         <h1>El sabor de<br>Madrid, <em>de toda la vida.</em></h1>
-        <p class="hero-copy">
-          Cocina tradicional, buenas tapas y el ambiente de un auténtico
-          mesón madrileño. Ven a disfrutar de los sabores que nunca pasan de moda.
-        </p>
+        <p class="hero-copy">Cocina tradicional, buenas tapas y el ambiente de un auténtico mesón madrileño. Ven a disfrutar de los sabores que nunca pasan de moda.</p>
         <div class="hero-actions">
           <a class="button button-gold" href="#especialidades">Descubre el mesón ↗</a>
           <button class="button button-outline" type="button" data-open-voice>🎙 Habla con nuestro asistente</button>
@@ -798,40 +367,20 @@
       </div>
     </section>
 
-    <div class="ticker">
-      Cocina casera <span>✳</span> Tradición madrileña <span>✳</span>
-      Tapas y raciones <span>✳</span> Un lugar para volver
-    </div>
+    <div class="ticker">Cocina casera <span>✳</span> Tradición madrileña <span>✳</span> Tapas y raciones <span>✳</span> Un lugar para volver</div>
 
     <section class="section" id="historia">
       <div class="section-inner story-grid">
         <div class="story-image">
-          <img
-            src="https://paginadeldistrito.com/wp-content/uploads/2018/03/la-oreja6.jpg"
-            alt="Alfonso Salas, propietario de El Mesón de la Oreja"
-            loading="lazy">
-          <div class="image-caption">
-            Alfonso Salas
-            <small>Una historia de tradición</small>
-          </div>
+          <img src="https://paginadeldistrito.com/wp-content/uploads/2018/03/la-oreja6.jpg" alt="Alfonso Salas, propietario de El Mesón de la Oreja" loading="lazy">
+          <div class="image-caption">Alfonso Salas<small>Una historia de tradición</small></div>
         </div>
         <div class="story-copy">
           <div class="eyebrow">Nuestra historia</div>
           <h2>La tradición se sirve en la mesa.</h2>
-          <p>
-            Hay lugares a los que uno vuelve por la comida, por el ambiente
-            y por la forma en que te reciben. El Mesón de la Oreja es uno
-            de esos sitios que mantienen vivo el espíritu de la cocina tradicional.
-          </p>
-          <p>
-            En San Blas seguimos apostando por las tapas, las raciones y los
-            sabores de siempre. Un lugar para reunirse, compartir y disfrutar
-            sin complicaciones.
-          </p>
-          <div class="signature">
-            El sabor de siempre.
-            <small>El Mesón de la Oreja · Madrid</small>
-          </div>
+          <p>Hay lugares a los que uno vuelve por la comida, por el ambiente y por la forma en que te reciben. El Mesón de la Oreja es uno de esos sitios que mantienen vivo el espíritu de la cocina tradicional.</p>
+          <p>En San Blas seguimos apostando por las tapas, las raciones y los sabores de siempre. Un lugar para reunirse, compartir y disfrutar sin complicaciones.</p>
+          <div class="signature">El sabor de siempre.<small>El Mesón de la Oreja · Madrid</small></div>
         </div>
       </div>
     </section>
@@ -841,79 +390,33 @@
         <div class="section-heading">
           <div class="eyebrow">De nuestra cocina</div>
           <h2>Sabores que hablan por sí solos.</h2>
-          <p>
-            Tapas, raciones y recetas que forman parte de la cultura gastronómica
-            madrileña. Pregúntanos por la disponibilidad de cada plato.
-          </p>
+          <p>Tapas, raciones y recetas que forman parte de la cultura gastronómica madrileña. Pregúntanos por la disponibilidad de cada plato.</p>
         </div>
-
         <div class="food-grid">
           <article class="food-card">
-            <div class="food-image">
-              <img
-                src="https://img05.restaurantguru.com/rb4c-El-Meson-de-la-Oreja-mussels.jpg"
-                alt="Ración de oreja de El Mesón de la Oreja"
-                loading="lazy">
-            </div>
-            <div class="food-info">
-              <div class="food-number">01 · UN CLÁSICO</div>
-              <h3>Oreja</h3>
-              <p>Una de las especialidades que dan personalidad a nuestro mesón.</p>
-            </div>
+            <div class="food-image"><img src="https://img05.restaurantguru.com/rb4c-El-Meson-de-la-Oreja-mussels.jpg" alt="Ración del restaurante" loading="lazy"></div>
+            <div class="food-info"><div class="food-number">01 · UN CLÁSICO</div><h3>Oreja</h3><p>Una de las especialidades que dan personalidad a nuestro mesón.</p></div>
           </article>
-
           <article class="food-card">
-            <div class="food-image">
-              <img
-                src="https://paginadeldistrito.com/wp-content/uploads/2018/03/la-oreja71.jpg"
-                alt="Selección de tapas sobre la barra del restaurante"
-                loading="lazy">
-            </div>
-            <div class="food-info">
-              <div class="food-number">02 · PARA COMPARTIR</div>
-              <h3>Tapas y raciones</h3>
-              <p>Para disfrutar con amigos, en familia o durante una buena conversación.</p>
-            </div>
+            <div class="food-image"><img src="https://paginadeldistrito.com/wp-content/uploads/2018/03/la-oreja71.jpg" alt="Selección de tapas sobre la barra del restaurante" loading="lazy"></div>
+            <div class="food-info"><div class="food-number">02 · PARA COMPARTIR</div><h3>Tapas y raciones</h3><p>Para disfrutar con amigos, en familia o durante una buena conversación.</p></div>
           </article>
-
           <article class="food-card">
-            <div class="food-image">
-              <img
-                src="https://img05.restaurantguru.com/r552-El-Meson-de-la-Oreja-dishes-2024-12.jpg"
-                alt="Plato de pulpo del restaurante"
-                loading="lazy">
-            </div>
-            <div class="food-info">
-              <div class="food-number">03 · COCINA TRADICIONAL</div>
-              <h3>Pulpo y más</h3>
-              <p>Descubre otros platos y consulta al equipo qué hay disponible ese día.</p>
-            </div>
+            <div class="food-image"><img src="https://img05.restaurantguru.com/r552-El-Meson-de-la-Oreja-dishes-2024-12.jpg" alt="Platos del restaurante" loading="lazy"></div>
+            <div class="food-info"><div class="food-number">03 · COCINA TRADICIONAL</div><h3>Pulpo y más</h3><p>Descubre otros platos y consulta al equipo qué hay disponible ese día.</p></div>
           </article>
         </div>
-
-        <p class="food-disclaimer">
-          Las fotografías muestran platos del restaurante. La disponibilidad y los precios
-          pueden cambiar; consúltanos por teléfono.
-        </p>
+        <p class="food-disclaimer">Las fotografías muestran platos del restaurante. La disponibilidad y los precios pueden cambiar; consúltanos por teléfono.</p>
       </div>
     </section>
 
     <section class="section award" id="premio">
       <div class="section-inner award-grid">
-        <div class="award-photo">
-          <img
-            src="https://paginadeldistrito.com/wp-content/uploads/2016/07/ruta-clausura-9333.jpg"
-            alt="Imagen de la entrega de premios de la Ruta de Tapas"
-            loading="lazy">
-        </div>
+        <div class="award-photo"><img src="https://paginadeldistrito.com/wp-content/uploads/2016/07/ruta-clausura-9333.jpg" alt="Imagen de la entrega de premios de la Ruta de Tapas" loading="lazy"></div>
         <div class="award-copy">
           <div class="eyebrow">Un recuerdo especial</div>
           <h2>El reconocimiento al trabajo bien hecho.</h2>
-          <p>
-            La tradición también se construye con esfuerzo, cariño por la cocina
-            y el apoyo de quienes se sientan a nuestra mesa. Recordamos con orgullo
-            nuestro reconocimiento en la Ruta de Tapas de San Blas.
-          </p>
+          <p>La tradición también se construye con esfuerzo, cariño por la cocina y el apoyo de quienes se sientan a nuestra mesa. Recordamos con orgullo nuestro reconocimiento en la Ruta de Tapas de San Blas.</p>
           <div class="award-label">Primer premio · IV Ruta de Tapas · 2016</div>
         </div>
       </div>
@@ -924,60 +427,20 @@
         <div class="visit-copy">
           <div class="eyebrow">Ven a conocernos</div>
           <h2>Estamos en San Blas.</h2>
-          <p>
-            Te esperamos en el barrio para disfrutar de la cocina tradicional.
-            Si tienes dudas sobre el horario, los precios o los platos, llámanos
-            o pregunta a nuestro asistente de voz.
-          </p>
-
+          <p>Te esperamos en el barrio para disfrutar de la cocina tradicional. Si tienes dudas sobre el horario, los precios o los platos, llámanos o pregunta a nuestro asistente de voz.</p>
           <div class="detail-list">
-            <div class="detail">
-              <div class="detail-label">Dirección</div>
-              <div class="detail-value">
-                Calle de Longares, 32
-                <small>San Blas-Canillejas, Madrid</small>
-              </div>
-            </div>
-            <div class="detail">
-              <div class="detail-label">Teléfono</div>
-              <div class="detail-value">
-                <a href="tel:+34913241322">913 24 13 22</a>
-                <small>Contacta con el restaurante</small>
-              </div>
-            </div>
-            <div class="detail">
-              <div class="detail-label">Domingos</div>
-              <div class="detail-value">
-                Cerrado
-                <small>El restaurante cierra los domingos.</small>
-              </div>
-            </div>
-            <div class="detail">
-              <div class="detail-label">Horario</div>
-              <div class="detail-value">
-                Consulta por teléfono
-                <small>Confirma el horario de apertura antes de venir.</small>
-              </div>
-            </div>
+            <div class="detail"><div class="detail-label">Dirección</div><div class="detail-value">Calle de Longares, 32<small>San Blas-Canillejas, Madrid</small></div></div>
+            <div class="detail"><div class="detail-label">Teléfono</div><div class="detail-value"><a href="tel:+34913241322">913 24 13 22</a><small>Contacta con el restaurante</small></div></div>
+            <div class="detail"><div class="detail-label">Domingos</div><div class="detail-value">Cerrado<small>El restaurante cierra los domingos.</small></div></div>
+            <div class="detail"><div class="detail-label">Horario</div><div class="detail-value">Consulta por teléfono<small>Confirma el horario de apertura antes de venir.</small></div></div>
           </div>
-
           <div class="visit-actions">
             <a class="button" href="https://www.google.com/maps/search/?api=1&query=El+Meson+de+la+Oreja+Calle+Longares+32+Madrid" target="_blank" rel="noopener noreferrer">Cómo llegar ↗</a>
             <a class="button" href="tel:+34913241322">Llamar ahora ☎</a>
           </div>
         </div>
-
-        <a
-          class="map-panel"
-          href="https://www.google.com/maps/search/?api=1&query=El+Meson+de+la+Oreja+Calle+Longares+32+Madrid"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Abrir la ubicación del restaurante en Google Maps">
-          <div class="map-content">
-            <div class="eyebrow">Te esperamos</div>
-            <h3>El Mesón de la Oreja</h3>
-            <p>Calle de Longares, 32<br>San Blas-Canillejas, Madrid<br><br>Abre la ubicación en Google Maps ↗</p>
-          </div>
+        <a class="map-panel" href="https://www.google.com/maps/search/?api=1&query=El+Meson+de+la+Oreja+Calle+Longares+32+Madrid" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicación en Google Maps">
+          <div class="map-content"><div class="eyebrow">Te esperamos</div><h3>El Mesón de la Oreja</h3><p>Calle de Longares, 32<br>San Blas-Canillejas, Madrid<br><br>Abre la ubicación en Google Maps ↗</p></div>
         </a>
       </div>
     </section>
@@ -985,37 +448,22 @@
     <section class="closing">
       <div class="eyebrow">¿Tienes alguna pregunta?</div>
       <h2>Estamos aquí para ayudarte.</h2>
-      <p>
-        Pregunta a nuestro asistente de voz por la dirección, los horarios,
-        las especialidades o cómo contactar con el restaurante.
-      </p>
+      <p>Pregunta a nuestro asistente de voz por la dirección, los horarios, las especialidades o cómo contactar con el restaurante.</p>
       <button class="button" type="button" data-open-voice>🎙 Hablar con el asistente</button>
     </section>
   </main>
 
   <footer>
     <div class="footer-inner">
-      <div>
-        <div class="footer-brand">El Mesón de la Oreja</div>
-        <div class="footer-small">Tradición madrileña · San Blas, Madrid</div>
-      </div>
-      <div class="footer-links">
-        <a href="#historia">Nuestra historia</a>
-        <a href="#especialidades">Especialidades</a>
-        <a href="#visitanos">Contacto</a>
-        <a href="tel:+34913241322">913 24 13 22</a>
-      </div>
+      <div><div class="footer-brand">El Mesón de la Oreja</div><div class="footer-small">Tradición madrileña · San Blas, Madrid</div></div>
+      <div class="footer-links"><a href="#historia">Nuestra historia</a><a href="#especialidades">Especialidades</a><a href="#visitanos">Contacto</a><a href="tel:+34913241322">913 24 13 22</a></div>
       <div class="footer-small">© <span id="year"></span> El Mesón de la Oreja</div>
     </div>
   </footer>
 
-  <!-- Agente de voz: sin chat escrito ni servicios de voz de pago -->
   <button class="voice-launcher" type="button" data-open-voice aria-label="Hablar con el asistente de voz">
     <span class="voice-launcher-icon" aria-hidden="true">🎙</span>
-    <span class="voice-launcher-text">
-      <strong>Asistente de voz</strong>
-      <small>¿En qué podemos ayudarte?</small>
-    </span>
+    <span class="voice-launcher-text"><strong>Asistente de voz</strong><small>¿En qué podemos ayudarte?</small></span>
   </button>
 
   <div class="voice-overlay" id="voiceOverlay" aria-hidden="true">
@@ -1024,27 +472,14 @@
       <div class="voice-brand-mark">M</div>
       <div class="voice-kicker">El Mesón de la Oreja</div>
       <h2 id="voiceTitle">Hablemos.</h2>
-      <p class="voice-intro">
-        Pregúntame por la ubicación, los horarios, el teléfono o nuestras especialidades.
-      </p>
-
+      <p class="voice-intro">Pregúntame por la ubicación, los horarios, el teléfono o nuestras especialidades.</p>
       <div class="voice-orb" id="voiceOrb" aria-hidden="true">🎙</div>
-      <div class="voice-status" id="voiceStatus" role="status" aria-live="polite">
-        Pulsa el botón y haz tu pregunta.
-      </div>
-      <p class="voice-answer" id="voiceAnswer" aria-live="polite">
-        ¡Hola! Soy el asistente de voz del Mesón de la Oreja. ¿Qué te gustaría saber?
-      </p>
-
+      <div class="voice-status" id="voiceStatus" role="status" aria-live="polite">Pulsa el botón y haz tu pregunta.</div>
+      <p class="voice-answer" id="voiceAnswer" aria-live="polite">¡Hola! Soy el asistente de voz del Mesón de la Oreja. ¿Qué te gustaría saber?</p>
       <button class="voice-main-button" id="voiceStart" type="button">🎙 Hablar ahora</button>
       <button class="voice-stop-button" id="voiceStop" type="button">Detener voz</button>
-      <p class="voice-hint" id="voiceHint">
-        Permite el acceso al micrófono cuando tu navegador lo solicite.
-      </p>
-      <p class="voice-privacy">
-        La voz se procesa mediante las funciones disponibles en tu navegador.
-        No introduzcas datos personales ni información confidencial.
-      </p>
+      <p class="voice-hint" id="voiceHint">Permite el acceso al micrófono cuando tu navegador lo solicite.</p>
+      <p class="voice-privacy">La voz se procesa mediante las funciones disponibles en tu navegador. No introduzcas datos personales ni información confidencial.</p>
     </section>
   </div>
 
@@ -1066,14 +501,13 @@
 
       $("#year").textContent = new Date().getFullYear();
 
-      // Menú móvil
       menuToggle.addEventListener("click", () => {
-        const isOpen = navLinks.classList.toggle("open");
-        menuToggle.setAttribute("aria-expanded", String(isOpen));
-        menuToggle.textContent = isOpen ? "×" : "☰";
+        const open = navLinks.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", String(open));
+        menuToggle.textContent = open ? "×" : "☰";
       });
 
-      navLinks.querySelectorAll("a").forEach((link) => {
+      navLinks.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", () => {
           navLinks.classList.remove("open");
           menuToggle.setAttribute("aria-expanded", "false");
@@ -1081,62 +515,142 @@
         });
       });
 
-      // API de voz nativa del navegador
-      const SpeechRecognition =
-        window.SpeechRecognition || window.webkitSpeechRecognition;
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const speechSupported = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
 
-      const speechSupported = "speechSynthesis" in window;
       let recognition = null;
       let isListening = false;
       let isSpeaking = false;
-      let shouldListenAgain = false;
-      let lastQuestion = "";
+      let speechRun = 0;
+      let availableVoices = [];
+      let selectedVoice = null;
 
       function setStatus(message, state = "idle") {
         status.textContent = message;
         orb.classList.toggle("listening", state === "listening");
         orb.classList.toggle("speaking", state === "speaking");
-        orb.textContent = state === "listening" ? "◉" :
-                         state === "speaking" ? "♫" : "🎙";
+        orb.textContent = state === "listening" ? "◉" : state === "speaking" ? "♫" : "🎙";
       }
 
+      // Android puede cargar la lista de voces de forma asíncrona.
+      function loadVoices() {
+        if (!speechSupported) return [];
+        availableVoices = window.speechSynthesis.getVoices() || [];
+
+        selectedVoice =
+          availableVoices.find(v => /^es[-_]ES$/i.test(v.lang) && v.localService) ||
+          availableVoices.find(v => /^es[-_]ES$/i.test(v.lang)) ||
+          availableVoices.find(v => /^es([-_]|$)/i.test(v.lang) && v.localService) ||
+          availableVoices.find(v => /^es([-_]|$)/i.test(v.lang)) ||
+          null;
+
+        return availableVoices;
+      }
+
+      if (speechSupported) {
+        loadVoices();
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+      }
+
+      function stopSpeaking() {
+        speechRun++;
+        if (speechSupported) {
+          try { window.speechSynthesis.cancel(); } catch (_) {}
+        }
+        isSpeaking = false;
+      }
+
+      // Reproduce sin servicios externos. Reintenta una vez si Android no inicia el audio.
       function speak(message) {
         answer.textContent = message;
 
         if (!speechSupported) {
-          setStatus("Tu navegador no admite voz sintetizada.");
+          setStatus("Este navegador no admite reproducción de voz.");
+          hint.textContent = "Puedes leer la respuesta en pantalla o probar con Chrome actualizado.";
           return;
         }
 
-        window.speechSynthesis.cancel();
+        stopSpeaking();
+        const thisRun = speechRun;
         isSpeaking = true;
-        setStatus("Te estoy respondiendo…", "speaking");
+        setStatus("Preparando la respuesta de voz…", "speaking");
 
-        const utterance = new SpeechSynthesisUtterance(message);
-        utterance.lang = "es-ES";
-        utterance.rate = 0.96;
-        utterance.pitch = 1.02;
-        utterance.volume = 1;
+        const trySpeak = (attempt) => {
+          if (thisRun !== speechRun || !overlay.classList.contains("open")) return;
 
-        const chooseVoice = () => {
-          const voices = window.speechSynthesis.getVoices();
-          const spanishVoice = voices.find(v => /^es(-|_)/i.test(v.lang) && /Spain|Español|Spanish/i.test(v.name))
-            || voices.find(v => /^es(-|_)/i.test(v.lang));
-          if (spanishVoice) utterance.voice = spanishVoice;
+          try {
+            window.speechSynthesis.cancel();
+
+            const utterance = new SpeechSynthesisUtterance(message);
+            utterance.lang = "es-ES";
+            utterance.rate = 0.93;
+            utterance.pitch = 1;
+            utterance.volume = 1;
+
+            loadVoices();
+            if (selectedVoice) utterance.voice = selectedVoice;
+
+            let started = false;
+
+            utterance.onstart = () => {
+              started = true;
+              isSpeaking = true;
+              setStatus("Te estoy respondiendo…", "speaking");
+            };
+
+            utterance.onend = () => {
+              if (thisRun !== speechRun) return;
+              isSpeaking = false;
+              setStatus("¿Quieres preguntarme otra cosa?");
+              startButton.textContent = "🎙 Hablar de nuevo";
+            };
+
+            utterance.onerror = (event) => {
+              if (thisRun !== speechRun) return;
+              if (event.error === "canceled" || event.error === "interrupted") return;
+
+              if (attempt < 1) {
+                setStatus("Reintentando la reproducción…", "speaking");
+                window.setTimeout(() => trySpeak(attempt + 1), 250);
+              } else {
+                isSpeaking = false;
+                setStatus("No se ha podido reproducir la voz. Inténtalo de nuevo.");
+                hint.textContent = "Comprueba el volumen multimedia del móvil. Si sigue fallando, pulsa Hablar de nuevo y revisa que el móvil no esté en silencio.";
+              }
+            };
+
+            window.speechSynthesis.speak(utterance);
+
+            // Algunos dispositivos Android dejan la síntesis pausada.
+            window.setTimeout(() => {
+              if (thisRun !== speechRun || started) return;
+              try { window.speechSynthesis.resume(); } catch (_) {}
+            }, 150);
+
+            // Si no empieza, vuelve a iniciar la síntesis una sola vez.
+            window.setTimeout(() => {
+              if (thisRun !== speechRun || started || !isSpeaking) return;
+              if (attempt < 1) {
+                try { window.speechSynthesis.cancel(); } catch (_) {}
+                window.setTimeout(() => trySpeak(attempt + 1), 200);
+              } else {
+                isSpeaking = false;
+                setStatus("No se ha podido reproducir la voz. Pulsa para volver a intentarlo.");
+                hint.textContent = "La disponibilidad de voces depende del dispositivo. Comprueba el volumen multimedia y las voces de texto a voz de Android.";
+              }
+            }, 1800);
+          } catch (_) {
+            if (attempt < 1) {
+              window.setTimeout(() => trySpeak(attempt + 1), 250);
+            } else {
+              isSpeaking = false;
+              setStatus("No se ha podido iniciar la voz en este dispositivo.");
+            }
+          }
         };
 
-        chooseVoice();
-
-        utterance.onend = () => {
-          isSpeaking = false;
-          setStatus("¿Quieres preguntarme otra cosa?");
-        };
-        utterance.onerror = () => {
-          isSpeaking = false;
-          setStatus("No he podido reproducir la voz. Puedes intentarlo de nuevo.");
-        };
-
-        window.speechSynthesis.speak(utterance);
+        // Da tiempo a Android Chrome para actualizar la cola de audio.
+        window.setTimeout(() => trySpeak(0), 120);
       }
 
       function normalise(text) {
@@ -1152,16 +666,13 @@
         return words.some(word => text.includes(word));
       }
 
-      // Respuestas preparadas: no inventa horarios ni precios exactos.
       function getReply(question) {
         const q = normalise(question);
 
-        if (!q) {
-          return "No he entendido la pregunta. Puedes preguntarme por la dirección, los horarios, el teléfono o nuestras especialidades.";
-        }
+        if (!q) return "No he entendido la pregunta. Puedes preguntarme por la dirección, los horarios, el teléfono o nuestras especialidades.";
 
         if (includesAny(q, ["hola", "buenas", "buenos dias", "buenas tardes", "buenas noches"])) {
-          return "¡Hola! Bienvenido al Mesón de la Oreja. Puedo ayudarte con la dirección, el horario, el teléfono, las especialidades y algunas preguntas habituales. ¿Qué necesitas saber?";
+          return "¡Hola! Bienvenido al Mesón de la Oreja. Puedo ayudarte con la dirección, el horario, el teléfono y nuestras especialidades. ¿Qué necesitas saber?";
         }
 
         if (includesAny(q, ["adios", "hasta luego", "gracias", "muchas gracias"])) {
@@ -1181,11 +692,11 @@
         }
 
         if (includesAny(q, ["horario", "hora abre", "a que hora", "cuando abre", "cuando cierra", "abierto", "abre hoy", "cierra hoy"])) {
-          return "El restaurante cierra los domingos. No tengo confirmado el horario exacto de apertura y cierre de los demás días, así que para no darte una información equivocada te recomiendo llamar al nueve uno tres, dos cuatro, uno tres, dos dos.";
+          return "El restaurante cierra los domingos. No tengo confirmado el horario exacto de los demás días, así que para no darte información equivocada te recomiendo llamar al nueve uno tres, dos cuatro, uno tres, dos dos.";
         }
 
-        if (includesAny(q, ["precio", "precios", "cuanto cuesta", "cuanto vale", "carta", "menu", "menú", "economico", "barato", "caro"])) {
-          return "Tenemos cocina tradicional, tapas y raciones, pero no dispongo de una carta de precios actualizada para darte importes exactos. Para conocer el precio de cada plato o el menú del día, puedes llamar al nueve uno tres, dos cuatro, uno tres, dos dos.";
+        if (includesAny(q, ["precio", "precios", "cuanto cuesta", "cuanto vale", "carta", "menu", "economico", "barato", "caro"])) {
+          return "Tenemos cocina tradicional, tapas y raciones, pero no dispongo de una carta de precios actualizada. Para conocer el precio de cada plato o el menú del día, puedes llamar al nueve uno tres, dos cuatro, uno tres, dos dos.";
         }
 
         if (includesAny(q, ["oreja", "especialidad", "especialidades", "tapa", "tapas", "racion", "raciones", "pulpo", "comida", "comer", "plato", "platos", "cocina"])) {
@@ -1193,14 +704,14 @@
         }
 
         if (includesAny(q, ["aparcamiento", "parking", "aparcar", "metro", "autobus", "transporte"])) {
-          return "Estamos en la calle de Longares, número treinta y dos, en San Blas-Canillejas, Madrid. Puedes abrir Google Maps desde la sección Cómo llegar para consultar la ruta y las opciones de transporte.";
+          return "Estamos en la calle de Longares, número treinta y dos, en San Blas-Canillejas, Madrid. Puedes abrir Google Maps desde la sección Cómo llegar para consultar la ruta.";
         }
 
         if (includesAny(q, ["alergia", "alergeno", "alergenos", "gluten", "celiaco", "celiaquia", "intolerancia", "vegetariano", "vegano"])) {
           return "Para confirmar alérgenos, ingredientes o adaptar un plato a tus necesidades alimentarias, habla directamente con el personal antes de pedir. No quiero darte información sobre ingredientes que no esté confirmada.";
         }
 
-        if (includesAny(q, ["perro", "mascota", "terraza", "accesible", "silla de ruedas", "ninos", "niños", "trona"])) {
+        if (includesAny(q, ["perro", "mascota", "terraza", "accesible", "silla de ruedas", "ninos", "trona"])) {
           return "No tengo confirmada esa información del restaurante. Para asegurarte antes de venir, llama al nueve uno tres, dos cuatro, uno tres, dos dos.";
         }
 
@@ -1212,27 +723,31 @@
         overlay.setAttribute("aria-hidden", "false");
         document.body.classList.add("voice-open");
 
+        // Actualiza voces después de una interacción directa del usuario.
+        if (speechSupported) {
+          loadVoices();
+          try { window.speechSynthesis.resume(); } catch (_) {}
+        }
+
         if (!SpeechRecognition) {
           setStatus("La función de escuchar no está disponible en este navegador.");
-          hint.textContent = "Prueba con Google Chrome en un dispositivo compatible y abre la web mediante HTTPS.";
+          hint.textContent = "Prueba con Google Chrome actualizado y abre la web mediante HTTPS.";
           startButton.disabled = true;
         } else {
           startButton.disabled = false;
           setStatus("Pulsa el botón y haz tu pregunta.");
+          hint.textContent = "Pulsa Hablar ahora y permite el acceso al micrófono.";
         }
       }
 
       function stopAll() {
-        shouldListenAgain = false;
         isListening = false;
-
         if (recognition) {
           try { recognition.abort(); } catch (_) {}
         }
-
-        if (speechSupported) window.speechSynthesis.cancel();
-        isSpeaking = false;
+        stopSpeaking();
         setStatus("Pulsa el botón y haz tu pregunta.");
+        startButton.textContent = "🎙 Hablar ahora";
       }
 
       function closeVoice() {
@@ -1245,7 +760,7 @@
       function startListening() {
         if (!SpeechRecognition) {
           setStatus("Este navegador no permite reconocer la voz.");
-          hint.textContent = "Abre la página en Google Chrome o en otro navegador compatible.";
+          hint.textContent = "Abre la página en Google Chrome actualizado.";
           return;
         }
 
@@ -1260,15 +775,14 @@
           return;
         }
 
-        if (speechSupported) window.speechSynthesis.cancel();
-        isSpeaking = false;
+        stopSpeaking();
+        try { window.speechSynthesis.resume(); } catch (_) {}
 
         recognition = new SpeechRecognition();
         recognition.lang = "es-ES";
         recognition.interimResults = false;
         recognition.maxAlternatives = 1;
         recognition.continuous = false;
-        shouldListenAgain = false;
 
         recognition.onstart = () => {
           isListening = true;
@@ -1279,14 +793,14 @@
 
         recognition.onresult = (event) => {
           const transcript = event.results[0][0].transcript;
-          lastQuestion = transcript;
+          const reply = getReply(transcript);
           answer.textContent = "Te he entendido: “" + transcript + "”";
-          shouldListenAgain = true;
 
+          // El reconocimiento ya terminó; inicia la respuesta después de una pausa corta.
           window.setTimeout(() => {
             if (!overlay.classList.contains("open")) return;
-            speak(getReply(transcript));
-          }, 250);
+            speak(reply);
+          }, 300);
         };
 
         recognition.onerror = (event) => {
@@ -1302,22 +816,21 @@
           };
 
           setStatus(messages[event.error] || "No he podido escuchar bien. Inténtalo de nuevo.");
+
           if (event.error === "not-allowed" || event.error === "service-not-allowed") {
-            hint.textContent = "Revisa los permisos del micrófono en los ajustes del navegador.";
+            hint.textContent = "Revisa los permisos del micrófono en los ajustes de Chrome.";
           }
         };
 
         recognition.onend = () => {
           isListening = false;
-          startButton.textContent = "🎙 Hablar de nuevo";
-          if (!isSpeaking && !shouldListenAgain && overlay.classList.contains("open")) {
-            setStatus("Cuando quieras, puedes hacer otra pregunta.");
-          }
+          if (!isSpeaking) startButton.textContent = "🎙 Hablar de nuevo";
         };
 
         try {
           recognition.start();
         } catch (_) {
+          isListening = false;
           setStatus("No he podido activar el micrófono. Vuelve a intentarlo.");
         }
       }
@@ -1328,6 +841,7 @@
 
       closeButton.addEventListener("click", closeVoice);
       startButton.addEventListener("click", startListening);
+
       stopButton.addEventListener("click", () => {
         stopAll();
         answer.textContent = "Voz detenida. Puedes hacer otra pregunta cuando quieras.";
@@ -1338,8 +852,16 @@
       });
 
       document.addEventListener("keydown", event => {
-        if (event.key === "Escape" && overlay.classList.contains("open")) {
-          closeVoice();
+        if (event.key === "Escape" && overlay.classList.contains("open")) closeVoice();
+      });
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          stopSpeaking();
+          if (recognition && isListening) {
+            try { recognition.abort(); } catch (_) {}
+            isListening = false;
+          }
         }
       });
     })();
